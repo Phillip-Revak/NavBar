@@ -26,12 +26,22 @@ ul {
     background-color: red;
   }
 
-  .footer {
+  .footer .active {
+    background-color: gray;
+  }
+
+ .footer {
       position: fixed;
       left: 0;
       bottom: 0;
       width: 100%;
-      text-align: center;
+  }
+
+  .footer ul {
+    background-color: blue;
+    display: flex;
+    text-align: center;
+    justify-content: center;
   }
 
   .search {
@@ -40,7 +50,8 @@ ul {
   }
 
   .cart {
-      background-color: white;
+      display: flex;
+      justify-content: flex-end;
   }
 
   .searchimg {
@@ -50,4 +61,7 @@ ul {
 
   .rightside {
       float: right;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
   }
